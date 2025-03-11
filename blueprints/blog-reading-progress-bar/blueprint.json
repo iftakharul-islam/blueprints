@@ -1,0 +1,36 @@
+{
+    "meta": {
+		"title": "Blog Reading Progress Bar",
+		"description": "Blog Read meter plugin",
+		"author": "iftakharul-islam",
+		"categories": ["blog", "posts"]
+	},
+    "landingPage": "/wp-admin/admin.php?page=brp-reading-progress-bar-settings",
+    "preferredVersions": {
+        "php": "8.0",
+        "wp": "latest"
+    },
+    "phpExtensionBundles": [
+        "kitchen-sink"
+    ],
+    "features": {
+        "networking": true
+    },
+    "steps": [
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "url",
+                "url": "https://downloads.wordpress.org/plugin/blog-reading-progress-bar.1.0.3.zip"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "login",
+            "username": "admin",
+            "password": "password"
+        }
+    ]
+}
